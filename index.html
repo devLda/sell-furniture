@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="stylesheet" href="assets/css/css.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="shortcut icon" href="assets/img/cart.png" type="image/x-icon">
+
+    <title>Sell Furniture</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="top-header">
+                <div class="container">
+                    <div class="flex space-between">
+                        <div class="box-inner-left">
+                            <p>FREE SHIPPING FOR ALL ORDERS OF <b>$200</b></p> 
+                        </div>
+                        <div class="box-inner-right">
+                            <ul class="list-inner">
+                                <li><a href="#"> 
+                                    <i class="fa-solid fa-location-dot icon"></i>
+                                    STORE LOCATOR </a></li>
+                                <li><a href="#"> 
+                                    <i class="fa-solid fa-credit-card icon"></i>
+                                    CHECKOUT 
+                                </a></li>
+                                <li onclick="activeSubMenu(0)" class="haveSub no-active"><a href="#"> 
+                                    <i class="fa-solid fa-dollar-sign icon"></i>
+                                    CURRENCY 
+                                    <i class="fa-solid fa-caret-down icon"></i>
+                                    </a>
+                                    <div  class="sub-menu display-none shadow-md">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-euro-sign"></i>
+                                                    Euro
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-sterling-sign"></i>
+                                                    Pound
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-dollar-sign"></i>    
+                                                    Dollar
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li onclick="activeSubMenu(1)" class="haveSub no-active">
+                                    <a href="#"> 
+                                        <img src="assets/img/en-gb.png" alt="English">
+                                        LANGUAGE 
+                                        <i class="fa-solid fa-caret-down icon"></i>
+                                    </a>
+                                    <div class="sub-menu display-none shadow-md">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="assets/img/en-gb.png" alt="Eng">
+                                                    English
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="assets/img/de-de.png" alt="Ger">
+                                                    Germany
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="header-mid">
+                <div class="container">
+                    <div class="flex">
+                        <div class="col-logo">
+                            <img src="assets/img/logo.png" alt="Logo" srcset="">
+                        </div>
+                        <div class="header-phone">
+                            <div class="flex">
+                                <i class="fa-solid fa-phone"></i>
+                                <div class="header-phone-right">
+                                    <p>need help?</p>
+                                    <span>+88.2345.6789</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-search grow-4">
+                            <form action="">
+                                <input type="text" placeholder="Search entire store here...">
+                                <button type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="cart">
+                                <a href="#">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span class="amount-list">0</span>
+                                </a>
+                                <button>
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-bag-shopping"></i> 
+                                            <span class="amount-cart">0</span>
+                                        </li>
+                                        <li>
+                                            <span class="total-money"> 0.00€ </span>
+                                        </li>
+                                    </ul>
+                                        
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="container flex items-baseline">
+                <div onclick="activeSubMenu(2)" class="vertical-menu rounded-t-3xl haveSub no-active ">
+                    <div class="vertical">
+                        <i class="fa-solid fa-bars block mr-2"></i>
+                        <span class="tracking-wider font-bold text-lg">Vertical Menu</span> 
+                    </div>
+                    <div class="sub-menu display-none rounded-b-3xl font-semibold text-base">
+                        <ul>
+                            <li onMouseOver="mouseOverNav(3)" onMouseOut="mouseOutNav(3)" class="haveSub no-active">
+                                <a href="#">
+                                    Bed & Bath 
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </a>
+                                <div class="sub-menu display-none shadow-md flex rounded-r-2xl tracking-wider">
+                                        <div class="grow">
+                                            <h4><a href="#">Baskets & Bins</a> </h4>
+                                            <h5><a href="#">Aluminum Nonstick</a> </h5>
+                                            <h5><a href="#">Calphalon</a></h5>
+                                            <h5><a href="#">Contemporary</a></h5>
+                                            <h5><a href="#">Hard-Anodized</a></h5>
+                                            <h5><a href="#">Sauce Pan</a></h5>
+                                        </div>
+                                        <div class="grow">
+                                            <h4><a href="#">Bed Frames</a> </h4>
+                                            <h5><a href="#">Apple Laptops</a></h5>
+                                            <h5><a href="#">Backlit</a></h5>
+                                            <h5><a href="#">Chromebooks</a></h5>
+                                            <h5><a href="#">Eluktronics</a></h5>
+                                            <h5><a href="#">EXcaliberPC</a></h5>
+                                            <h5><a href="#">Gaming Laptops</a></h5>
+                                            <h5><a href="#">MacBooks</a></h5>
+                                            <h5><a href="#">Microsoft Surface</a></h5>
+                                            <h5><a href="#">PC Laptops</a></h5>
+                                        </div>
+                                        <div class="grow">
+                                            <h4><a href="#">Dressers</a> </h4>
+                                            <h5><a href="#">Dual Core</a></h5>
+                                            <h5><a href="#">Gaming Monitors</a></h5>
+                                            <h5><a href="#">GPS Monitors</a></h5>
+                                            <h5><a href="#">IPS Monitors</a></h5>
+                                            <h5><a href="#">Quad Core</a></h5>
+                                            <h5><a href="#">Single Core</a></h5>
+                                            <h5><a href="#">Top Picks For Monitors</a></h5>
+                                            <h5><a href="#">LED Monitors</a></h5>
+                                            <h5><a href="#">LCD Monitors</a></h5>
+                                        </div>
+                                </div>
+                            </li>
+                            <li onMouseOver="mouseOverNav(4)" onMouseOut="mouseOutNav(4)" class="haveSub no-active">
+                                <a href="#">
+                                    Kitchen & Dinning
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </a>
+                                <div class="sub-menu display-none shadow-md flex rounded-r-2xl tracking-wider">
+                                    <div class="grow">
+                                        <h4><a href="#">Bowls</a> </h4>
+                                        <h5><a href="#">E-Readers</a> </h5>
+                                        <h5><a href="#">IPad</a></h5>
+                                        <h5><a href="#">IPad & Tablet Accessories</a></h5>
+                                        <h5><a href="#">Kids Tablets</a></h5>
+                                        <h3 class="text-lg">Widget HTML</h3>
+                                    </div>
+                                    <div class="grow">
+                                        <h4><a href="#">Cutting Boards</a> </h4>
+                                        <h5><a href="#">Adapters, Cables & Chargers</a></h5>
+                                        <h5><a href="#">IPhone</a></h5>
+                                        <h5><a href="#">Prepaid Phones</a></h5>
+                                        <h5><a href="#">Unlocked Phones</a></h5>
+                                    </div>
+                            </div>
+                            </li>
+                            <li><a href="#">Console Tables</a> </li>
+                            <li><a href="#">TV Stands</a> </li>
+                            <li onMouseOver="mouseOverNav(5)" onMouseOut="mouseOutNav(5)" class="haveSub no-active">
+                                <a href="#">
+                                    Accessories
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </a>
+                                <div class="sub-menu display-none rounded-r-2xl tracking-wider">
+                                    <div onMouseOver="mouseOverMega(0)" onMouseOut="mouseOutMega(0)" class="mega-menu no-active">
+                                        <a href="#">Mice And Trackballs <i class="fa-solid fa-caret-right"></i></a>
+                                        <div class="sub-mega display-none shadow-md">
+                                            <h5>Mice 1</h5>
+                                            <h5>Mice 2</h5>
+                                            <h5>Trackball 1</h5>
+                                            <h5>Trackball 2</h5>
+                                        </div> 
+                                    </div>
+                                    <div onMouseOver="mouseOverMega(1)" onMouseOut="mouseOutMega(1)" class="mega-menu no-active">
+                                        <a href="#">Scanners <i class="fa-solid  fa-caret-right"></i></a>
+                                        <div class="sub-mega display-none shadow-md">
+                                            <h5>Scanner 1</h5>
+                                            <h5>Scanner 2</h5>
+                                            <h5>Scanner 3</h5>
+                                            <h5>Scanner 4</h5>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">Game & Consoles</a> </li>
+                            <li><a href="#">Business & Office</a> </li>
+                            <li><a href="#">Cameras</a> </li>
+                            <li><a href="#">Headphones</a> </li>
+                            <li><a href="#">Handmade</a> </li>
+                            <li><a href="#">More item</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-menu grow">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li onMouseOver="mouseOverNav(6)" onMouseOut="mouseOutNav(6)" class="haveSub no-active">
+                            <a href="#">
+                                SHOP
+                                <i class="fa-solid fa-caret-down icon"></i>
+                            </a>
+                            <div class="sub-menu display-none tracking-wider rounded-xl shadow-md">
+                                <div class="flex">
+                                    <div class="grow">
+                                        <h4><a href="#">Home Decor</a></h4>
+                                        <h5><a href="#">Chairs & Sofas</a></h5>
+                                        <h5><a href="#">Chest</a></h5>
+                                        <h5><a href="#">Loungers</a></h5>
+                                        <h5><a href="#">Sets</a></h5>
+                                        <h5><a href="#">Tables</a></h5>
+                                    </div>
+                                    <div class="grow">
+                                        <h4><a href="#">Houseware</a></h4>
+                                        <h5><a href="#">Dining Chairs</a></h5>
+                                        <h5><a href="#">Dining Tables</a></h5>
+                                        <h5><a href="#">Gramophone</a></h5>
+                                        <h5><a href="#">Sideboards</a></h5>
+                                        <h5><a href="#">Tableware</a></h5>
+                                    </div>
+                                    <div class="grow">
+                                        <h4><a href="#">Outdoor</a></h4>
+                                        <h5><a href="#">Bed</a></h5>
+                                        <h5><a href="#">Daybed</a></h5>
+                                        <h5><a href="#">Futon</a></h5>
+                                        <h5><a href="#">Hammock</a></h5>
+                                        <h5><a href="#">Headboard</a></h5>
+                                    </div>
+                                    <div class="grow">
+                                        <h4><a href="#">Bed Room</a></h4>
+                                        <h5><a href="#">Banquet Camera</a></h5>
+                                        <h5><a href="#">Bathroom Storage</a></h5>
+                                        <h5><a href="#">Bathroom Vanities</a></h5>
+                                        <h5><a href="#">Hyllis</a></h5>
+                                        <h5><a href="#">Sinks</a></h5>
+                                    </div>
+                                </div>
+                                <div class="flex text-lg font-medium text-center">
+                                    <div class="grow">
+                                        <h3>Widget HTML</h3>
+                                    </div>
+                                    <div class="grow">
+                                        <h3>Widget HTML</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li onMouseOver="mouseOverNav(7)" onMouseOut="mouseOutNav(7)" class="haveSub no-active">
+                            <a href="#">
+                                ACCESSORIES
+                                <i class="fa-solid fa-caret-down icon pb-1"></i>
+                            </a>
+                            <div class="sub-menu display-none shadow-md tracking-wider">
+                                <div onMouseOver="mouseOverMega(2)" onMouseOut="mouseOutMega(2)" class="mega-menu no-active">
+                                    <a class="font-semibold" href="#">Mice And Trackballs <i class="fa-solid fa-caret-right"></i></a>
+                                    <div class="sub-mega display-none shadow-md">
+                                        <h5>Mice 1</h5>
+                                        <h5>Mice 2</h5>
+                                        <h5>Trackball 1</h5>
+                                        <h5>Trackball 2</h5>
+                                    </div> 
+                                </div>
+                                <div onMouseOver="mouseOverMega(3)" onMouseOut="mouseOutMega(3)" class="mega-menu no-active">
+                                    <a class="font-semibold" href="#">Scanners <i class="fa-solid  fa-caret-right"></i></a>
+                                    <div class="sub-mega display-none shadow-md">
+                                        <h5>Scanner 1</h5>
+                                        <h5>Scanner 2</h5>
+                                        <h5>Scanner 3</h5>
+                                        <h5>Scanner 4</h5>
+                                    </div> 
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">SPECIALS</a> </li>
+                        <li><a href="#">CONTACT US</a> </li>
+                        <li onMouseOver="mouseOverNav(8)" onMouseOut="mouseOutNav(8)" class="haveSub no-active">
+                            <a href="#">
+                                BLOG
+                                <i class="fa-solid fa-caret-down icon"></i>
+                            </a>
+                            <div class="sub-menu display-none tracking-wider rounded-xl shadow-md">
+                                <div class="flex text-lg font-medium text-center mt-2">
+                                    <div class="grow">
+                                        <h3>Widget HTML</h3>
+                                        <h3>Widget HTML</h3>
+                                    </div>
+                                    <div class="grow">
+                                        <h3>Widget HTML</h3>
+                                        <h3>Widget HTML</h3>
+                                    </div>
+                                    <div class="grow">
+                                        <h3>Widget HTML</h3>
+                                        <h3>Widget HTML</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="login-signup text-xs tracking-wider">
+                    <i class="fa-solid fa-user-check text-base"></i>
+                    <a href="#">REGISTER</a>
+                    <span class="opacity-60">OR</span>
+                    <a href="#">LOGIN</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="slider">
+                <img src="assets/img/slideshow1-1.jpg" alt="slideshow">
+                <div class="container">
+                    <div class="description-slider">
+                        <h1 class="font-medium text-4xl mb-8">WOODEN CHAIR. MORDEN FURNITURE</h1>
+                        <p class="mb-5 text-base tracking-wider opacity-60">Aenean pretium convallis lorem, sit amet dapibus ante mollis a Integer bibendum interdum</p>
+                        <ul class="mb-2">
+                            <li><img src="./assets/img/wooden-chair.jpg" alt="wooden chair"></li>
+                            <li><img src="./assets/img/wooden-chair.jpg" alt="wooden chair"></li>
+                            <li><img src="./assets/img/wooden-chair.jpg" alt="wooden chair"></li>
+                            <li><img src="./assets/img/wooden-chair.jpg" alt="wooden chair"></li>
+                        </ul>
+                        <p class="text-2xl font-semibold tracking-wider">$200.45</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Start Trending -->
+            <div class="trending container">
+                <div class="flex">
+                    <div class="grow">
+                        <img src="./assets/img/img1-top-store1.jpg" alt="">
+                        <div class="text-trending">
+                            <p class="text-base font-normal tracking-wide opacity-60">Trending</p>
+                            <p class="font-semibold tracking-wider">Bottle Humidifier Living Room Set</p>
+                            <i class="fa-solid fa-circle-arrow-right"></i>
+                        </div>
+                    </div>
+    
+                    <div class="grow">
+                        <img src="./assets/img/img2-top-store1.jpg" alt="">
+                        <div class="text-trending">
+                            <p class="text-base font-normal tracking-wide opacity-60">Best-Seller</p>
+                            <p class="font-semibold tracking-wider">Beoplay A1 Sound Accessories</p>
+                            <i class="fa-solid fa-circle-arrow-right"></i>
+                        </div>
+                    </div>
+    
+                    <div class="grow">
+                        <img src="./assets/img/img3-top-store1.jpg" alt="">
+                        <div class="text-trending">
+                            <p class="text-base font-normal tracking-wide opacity-60">Trending</p>
+                            <p class="font-semibold tracking-wider">Bottle Humidifier Living Room Set</p>
+                            <i class="fa-solid fa-circle-arrow-right"></i>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            <!-- End Trending -->
+
+            <!-- Start tab-product -->
+            <div class="product-container container">
+                <div class="tab-product justify-center flex">
+                    <ul>
+                        <li>Bed & Bath</li>
+                        <li>Kitchen & Dinning</li>
+                        <li>Nightstands</li>
+                    </ul>
+                </div>
+                <div class="list-product-tab">
+                    <div class="flex">
+                        <div class="grow">
+                            <div class="tab-product-item">
+                                <img src="assets/img/list-tab.jpg" alt="list tab">
+                                <p>76.89€</p>
+                                <p>114.55€</p>
+                                <p>Apple cinema 30-Inch HD Flat-Panel Display</p>
+                            </div>
+                        </div>
+
+                        <div class="grow">
+                            <div class="tab-product-item">
+                                <img src="assets/img/1_4-370x370.jpg" alt="list tab">
+                                <p>76.89€</p>
+                                <p>114.55€</p>
+                                <p>Apple cinema 30-Inch HD Flat-Panel Display</p>
+                            </div>
+                        </div>
+
+                        <div class="grow">
+                            <div class="tab-product-item">
+                                <img src="assets/img/4_2-370x370.jpg" alt="list tab">
+                                <p>76.89€</p>
+                                <p>114.55€</p>
+                                <p>Apple cinema 30-Inch HD Flat-Panel Display</p>
+                            </div>
+                        </div>
+
+                        <div class="grow">
+                            <div class="tab-product-item">
+                                <img src="assets/img/2_4-370x370.jpg" alt="list tab">
+                                <p>76.89€</p>
+                                <p>114.55€</p>
+                                <p>Apple cinema 30-Inch HD Flat-Panel Display</p>
+                            </div>
+                        </div>
+
+                        <div class="grow">
+                            <div class="tab-product-item">
+                                <img src="assets/img/5_3-370x370.jpg" alt="list tab">
+                                <p>76.89€</p>
+                                <p>114.55€</p>
+                                <p>Apple cinema 30-Inch HD Flat-Panel Display</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- End tab-product -->
+            <div class="trending-now">
+                Trending now
+            </div>
+            <!-- End trending-now -->
+            <div class="best-seller">
+                best-seller
+            </div>
+            <!-- End best-seller -->
+            <div class="most-product">
+                most-product
+            </div>
+            <!-- End most product -->
+            <div class="parallax">
+                parallax
+            </div>
+            <!-- End parallax -->
+            <div class="information">
+                information
+            </div>
+            <!-- End information -->
+            <div class="brand">
+                brand
+            </div>
+            <!-- End brand -->
+            <div class="Subscribe">
+                Subscribe
+            </div>
+            <!-- End subscriber -->
+        </main>
+        <footer>
+            footer
+        </footer>
+
+        <script src="js/main.js"></script>
+    </div>
+</body>
+</html>
